@@ -1,0 +1,16 @@
+entry point is index.html
+which gives app-root
+so in app.component.ts 
+selector: 'app-root',
+templateUrl: './app.component.html',
+styleUrl: './app.component.css'
+so entry is selector 'app-root' and template is app.component.html and style is app.component.css
+and logic is in app.component.ts
+
+{{text_inside_this}} is a js text
+
+setTimeout changes the text without page reloading
+
+.spec.ts is a typescript file for testing
+
+
