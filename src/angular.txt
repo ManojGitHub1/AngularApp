@@ -56,4 +56,16 @@ Angular is Single page Application
 therefore index.html , styles.css, main.ts are entry point of your project
 So, 1. main.ts->AppComponent->app-root
 
+11.
+Angular CLI Commands
+a. ng version, new project,
+b. generate component(ng g c <compo-name>)
+         module, services, pipes, directives, routing, interface, model, class
+c. ng test
+4. ng serve --open (starting development Server, build and launch)
+5. ng build (when its production ready) (creates dist folder)
+6. ng add (add @angular packages/modules of angular)
+7. ng update (update packages, angular versions)
+8. ng lint (Linting making sure naking Typescript is proper coding syntax, patterns, etc.
+         
 
