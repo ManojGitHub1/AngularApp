@@ -22,6 +22,11 @@ node_modules
 angular.json
 Configuring your styles, js or for pipeline deployments
 settings specific to your project
+Earlier app-module/app-module.module.ts where standalone was false by default and module was managed
+Now, standalone is true by default
+If want to use module make standalone false(if not standalone component then atleast 1 module is necessary)
+for entire project to be false change in angular.json.
+
 
 6.
 package.json
