@@ -101,5 +101,44 @@ Angular Components
 - Components can be nested within other components, enabling complex UI structures.
 - Angular components can integrate with third-party UI libraries for extended functionalities.
 
-
-  
+13.
+Angular 17 - Modular Arch.
+1. No more NgModule - building block, which encapsulates comp, directives, pipes and services
+2. No more default AppModule - Every ang app used to have at least one module, root module
+                               which bootstraps application.
+3. Everything is standalone - It can be injected and used anywhere
+4. Feature Modules -
+      Developers can organize code relevant to a specific functionality into feature modules,
+      promoting code reusability and separation of concems.
+      e.g: Modules like-Authentication, login, payment, profile, order, shopping, etc.
+5. Lazy Loading -
+      Modules can be lazily loaded, meaning they are loaded on demand, which can significantly
+      improve the application's initial loading time.
+6. Shared Modules - (using standalone no need to create shared modules)
+      Shared modules allow for the declaration of components, directives, and pipes that can
+      be used across various modules in an application.
+7. Core Module - Core Module often used to hold singleton services, global components, and
+      other application-wide resources.
+8. Module Imports -
+      Modules can import other modules. For example, feature modules often import
+      'CommonModule• for common directives like nglf and ngFor.
+8. Service Scoping -
+      Services provided in Angular modules can be scoped to that module. This allows for
+      singleton services or multiple instances across different modules.
+9. Declarables -
+      Components, directives, and pipes are considered declarables and must be declared in
+      exactly one NgModule.
+1O. Exporting Module Content -
+      Modules can export components, directives, pipes so they can be used in other modules.
+11. NgModule Providers - (Now we can do standalone injection)
+      Services can be provided in modules, making them available application-wide or in the
+      scope of the module.
+12. Angular Libraries -
+      Angular's modularity extends to external libraries, allowing developers to include and
+      use third-party modules in their applications.
+13. Hierarchical Dependency Injection -
+      Angular's dependency injection system works in tandem with its modularity, allowing for
+      hierarchical and efficient management of dependencies.
+14. Module Federation (Micro-Frontends) -
+      Angular supports module federation, enabling large applications to be broken down into
+      smaller, more manageable sub-applications or micro-frontends.
