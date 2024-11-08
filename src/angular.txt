@@ -1,16 +1,59 @@
-entry point is index.html
-which gives app-root
-so in app.component.ts 
-selector: 'app-root',
-templateUrl: './app.component.html',
-styleUrl: './app.component.css'
-so entry is selector 'app-root' and template is app.component.html and style is app.component.css
-and logic is in app.component.ts
+1.
+.angutar Ignore this folder
+.vscode Ignore this folder
+for cashing purposes
 
-{{text_inside_this}} is a js text
+2.
+node_module - installed node modules
+Packages will be installed here in this folder
+You dont have to go through these folders or files
+Unless you are making changes to core libraries/modueles
+npm instal or ng add you would see the packages the here
 
-setTimeout changes the text without page reloading
+3.
+.editorconfig Make your custoe editor changes in this file
 
-.spec.ts is a typescript file for testing
+4.
+.gitignore
+We can add folders/fites that we need to ignore commiting
+node_modules
+
+5.
+angular.json
+Configuring your styles, js or for pipeline deployments
+settings specific to your project
+
+6.
+package.json
+e.g:- scripts section, when we type ng serve what it should do
+installed dependencies, etc
+
+7.
+package-lock.json
+same details like package.json with more details of dependencies
+
+8.
+tsconfig.app.json
+tells you typescript config for your project
+
+9.
+tsconfig.spec.json
+for testing purposes
+
+10.
+src/ - main source code folder
+app/ - actual code of your project
+  Every component in Angular has 4 files
+  .html, .css, .ts
+  In app.component.ts selector is the starting point
+
+  app.component.spce.ts
+  unit testing, jasmin for writing tests, karma for running tests
+  ng test - karma will run jasmin code for test
+
+assets/ - are public
+Angular is Single page Application
+therefore index.html , styles.css, main.ts are entry point of your project
+So, 1. main.ts->AppComponent->app-root
 
 
