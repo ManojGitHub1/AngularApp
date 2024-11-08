@@ -68,4 +68,38 @@ c. ng test
 7. ng update (update packages, angular versions)
 8. ng lint (Linting making sure naking Typescript is proper coding syntax, patterns, etc.
          
+12.
+Angular Components
+1. Angular components are declared using @Component decorator
+2. @Component decorator can have multiple inputs/parameters
+  a. selector - its the name which can be used/refered in application
+  b. standalone - by default all angular applications are stdlone
+                  No need import/declare inside a Module, can directly use them in application
+  c. imports - you will provide all required modules for this component
+  d. templateUrl - HTML for component // template - use when have only limited HTML
+  e. styleUrl - CSS of stylesheet for the component // style: [] - inline style
+- Logic is written in Component main class e.g:- export class `AppComponent{}`
+- Styles specific to component are defined in CSS/SCSS files, 
+  allowing encapsulation of visual presentation
+- Angular components utilize `data binding` for interactions btw
+* TypeScript class(model) and HTML template(view). [Class-> Template -> Class]
+- Components communicate with each other using 
+  @Imput & @Output decorators for data sharing and `event handling`.
+- Component Lifecycle methods
+  1. Right from     Creation -> [8 stages] -> Destroy
+  2. Angular provides lifecycle hooks like `ngOnInit`, `ngOnDestroy`,
+     allowing components to run code at specific lifecycle events.
+- View encapsulation in components controls how CSS styles are applied and scoped.
+- Components can incorporate directives, enhancing their functionality and behavior.
+- Components can inject services as dependencies to share data and functionality across the app.
+- Designed for reusability, components can be reused across different parts of the application.
+- Angular supports dynamic loading of components, adding flexibility to UI rendering.
+- Using `<ng-content>` components can project content into their templates, allowing for more
+  dynamic and reusable components.
+- Angular's change detection mechanism keeps the Ul in sync with the underlying data model.
+- Components are unit-testable, making it easier to maintain and debug applications.
+- Components can be nested within other components, enabling complex UI structures.
+- Angular components can integrate with third-party UI libraries for extended functionalities.
 
+
+  
